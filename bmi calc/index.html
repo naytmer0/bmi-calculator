@@ -1,0 +1,43 @@
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator BMI</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1>Oblicz swój wskaźnik BMI</h1>
+
+    <div class="block">
+      <form>
+        <fieldset>
+          <label for="waga">Waga:</label>
+          <input type="number" id="waga" class="inpt waga" />
+          <label>kg</label>
+        </fieldset>
+        <br />
+        <fieldset>
+          <label for="wzrost">Wzrost:</label>
+          <input type="number" id="wzrost" class="inpt wzrost" />
+          <label>cm</label>
+        </fieldset>
+        <br />
+        <button type="button" class="btn">Oblicz</button>
+      </form>
+    </div>
+
+    <div class="modal hidden">
+      <form>
+        <button class="close">&times;</button>
+      </form>
+      <h2 class="wynik">Twój wskaźnik BMI wynosi:</h2>
+      <p class="bmi">bmi</p>
+      <h3>Wskaźnik BMI wskazuje na:</h3>
+      <p class="stan"></p>
+    </div>
+
+    <div class="overlay hidden"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
